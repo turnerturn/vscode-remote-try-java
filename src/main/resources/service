@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Read the application path from the YAML file
+APP_PATH='/workspaces/vscode-remote-try-java/build/libs'
+# $(grep -oP '(?<=/opt/meow)' application.yml)
+
+# Define the path to the JAR file
+JAR_FILE="$APP_PATH/my-app-1.0-SNAPSHOT.jar"
+
+cd '/workspaces/vscode-remote-try-java'
+# Define the command to start your Java application
+START_CMD="/workspaces/vscode-remote-try-java/gradlew run"
+
+# Check if the application is already running
+PID=$(pgrep -f "$START_CMD")
+
+if [ -n "$PID" ]; then
+  echo "Service is already running with PID $PID. Killing the process..."
+  kill -9 $PID
+  echo "Process killed."
+fi
+
+# Navigate to the application directory
+cd $APP_PATH
+
+# Start the application in the background
+nohup $START_CMD &
+PID=$(pgrep -f "$START_CMD")
+echo "Service started in the background.  $PID"
