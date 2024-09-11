@@ -18,7 +18,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     runtimeOnly 'com.h2database:h2'
 
-    implementation 'com.zaxxer:HikariCP'
+
     // Lombok dependency
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
@@ -27,7 +27,7 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.24'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
+    implementation 'com.zaxxer:HikariCP'
     // Spring Boot Actuator
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
@@ -36,6 +36,7 @@ dependencies {
 
     // Spring Boot DevTools
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
 }
 
 dependencyManagement {

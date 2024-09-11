@@ -7,8 +7,6 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/java:11-bullseye": {
-			"installMaven": "true",
-			"mavenVersion": "3.8.6",
 			"gradleVersion": "7.3.3",
 			"installGradle": "true"
 		}
@@ -20,7 +18,15 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"dbaeumer.vscode-eslint",
+				"vscjava.vscode-java-pack",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"vscjava.vscode-gradle",
+				"redhat.java",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-java-dependency"
 			]
 		}
 	},

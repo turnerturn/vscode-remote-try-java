@@ -20,7 +20,6 @@ spring:
       path: /h2-console # Path to access the H2 console
 
 passwordRotationWatcher:
-  recovery.command: 'curl -X POST http://localhost:8080/actuator/restart' # Command to be executed for password recovery
   cron: '15/30 * * * * ?' # Cron expression for scheduling the password rotation watcher
   #cron: '0 15/30 * * * ?' # Alternative cron expression (commented out)
 

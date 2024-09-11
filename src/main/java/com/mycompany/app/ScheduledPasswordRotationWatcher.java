@@ -2,21 +2,12 @@ package com.mycompany.app;
 
 import java.util.UUID;
 
-import org.springframework.context.annotation.Profile;
+import org.springframework.cloud.context.restart.RestartEndpoint;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.restart.RestartEndpoint;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+
 //import org.springframework.cloud.context.restart.RestartEndpoint;
 import lombok.extern.slf4j.Slf4j;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-//import jakarta.annotation.PostConstruct;
-//import com.magellanlp.tas.eventpoller.common.ShellCommandExecutor;
 
 /**
  * Scheduled @hourly to compare cyberark agent's password to our cached value.
@@ -47,7 +38,7 @@ public class ScheduledPasswordRotationWatcher {
     this.restartEndpoint = restartEndpoint;
   }
 
-  @Scheduled(initialDelay = 10000, fixedRate = 15000) // cron = "${passwordRotationWatcher.cron}")
+  @Scheduled(cron = "${passwordRotationWatcher.cron}")
   public void execute() throws Exception {
     String encodedPassword = null;
     try {
@@ -71,39 +62,3 @@ public class ScheduledPasswordRotationWatcher {
 
 }
 
-@Slf4j
-@Component
-class ShellCommandExecutor {
-
-  public String execute(String command) {
-    log.trace("execute({})", command);
-    StringBuilder sb = new StringBuilder();
-    /*
-     * 
-     * 
-     * String os = System.getProperty("os.name").toLowerCase();
-     * if (os.contains("win")) {
-     * command = "cmd /c " + command;
-     * } else {
-     * command = "/bin/bash -c " + command;
-     * }
-     */
-    try {
-      Process process = Runtime.getRuntime().exec(command);
-      try (
-          BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));) {
-        String line;
-        while ((line = reader.readLine()) != null) {
-          sb.append(line);
-        }
-        process.waitFor();
-        log.debug("Output produced from command.... Output: {}", sb);
-      } catch (Exception e) {
-        log.error("Error executing command", e);
-      }
-    } catch (Exception e) {
-      log.error("Error getting process from runtime...", e);
-    }
-    return sb.toString();
-  }
-}
