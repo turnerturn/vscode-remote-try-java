@@ -89,3 +89,33 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 Copyright © Microsoft Corporation All rights reserved.<br />
 Licensed under the MIT License. See LICENSE in the project root for license information.
+
+
+```sql
+DECLARE
+    -- Cursor to fetch data from the SQL query
+    CURSOR my_cursor IS
+        SELECT column1, column2 -- specify your query and columns here
+        FROM your_table; -- replace with your actual table/query
+    
+    -- Variables to hold each row's data
+    v_column1 your_table.column1%TYPE;
+    v_column2 your_table.column2%TYPE;
+
+BEGIN
+    -- Open the cursor and loop through each record
+    FOR rec IN my_cursor LOOP
+        -- Log a generic insert statement to the console
+        DBMS_OUTPUT.PUT_LINE('INSERT INTO your_table_name (column1, column2) VALUES ('
+                             || rec.column1 || ', ' || rec.column2 || ');');
+        
+        -- Your actual insert statement would go here if required
+        -- INSERT INTO your_table_name (column1, column2) VALUES (rec.column1, rec.column2);
+    END LOOP;
+    
+    -- Make sure to enable output if using in environments like SQL*Plus
+    DBMS_OUTPUT.PUT_LINE('Iteration completed.');
+END;
+/
+
+```
