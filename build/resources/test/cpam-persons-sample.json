@@ -1,0 +1,66 @@
+[
+  {
+    "unid": "9kHd2dSGAiYnR5oLTguq9g==",
+    "firstName": "John",
+    "lastName": "Dough",
+    "status": "ACTIVE",
+    "personId": "OK12312132",
+    "effectiveDate": null,
+    "expirationDate": null,
+    "badges": [
+      {
+        "number": "68900",
+        "status": "VX.ACTIVE",
+        "effectiveDate": 1613541600000,
+        "expirationDate": null,
+        "accessLevels": [
+          {
+            "unid": "3XI2qWnsQn59tGlVh0OUiQ==",
+            "name": "Doniphan_Rack"
+          },
+          {
+            "unid": "VxMDwlWa8qEakuoqU6blDQ==",
+            "name": "Wichita_Rack"
+          },
+          {
+            "unid": "NYa/dqCbPkTfMbb2a8bf5w==",
+            "name": "Wichita_Gates"
+          },
+          {
+            "unid": "ll+QBzDM0bWoiA82JZdFgA==",
+            "name": "Omaha_Gate"
+          },
+          {
+            "unid": "NG8PCqfMEJJNdMDGh89GZw==",
+            "name": "Scott_City_Rack"
+          },
+          {
+            "unid": "M/79LYEFGHtRlavIJJGQRA==",
+            "name": "KansasCity_Rack"
+          },
+          {
+            "unid": "hj5ymbbyRMlTd1NB9kQhrA==",
+            "name": "KansasCity_Gates"
+          },
+          {
+            "unid": "aEdNkKphLeFNZleSxIYq3A==",
+            "name": "Doniphan_Gates"
+          },
+          {
+            "unid": "VRS0OcSBfCTBSShuApJokQ==",
+            "name": "Kansas City Bio"
+          },
+          {
+            "unid": "ykA8Qk5lp3Yr2HEkcyusLg==",
+            "name": "Omaha_Rack"
+          },
+          {
+            "unid": "gTdbhBZuJ3ZBIh1PcC0QDQ==",
+            "name": "Scott_City_Gates"
+          }
+        ],
+        "unid": "01a8c6e2-b385-498f-8656-305e8cfb6b22"
+      }
+    ]
+  }
+]

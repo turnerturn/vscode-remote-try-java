@@ -23,9 +23,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     implementation 'io.github.cdimascio:java-dotenv:5.2.2'
-    // For test scope
-    testCompileOnly 'org.projectlombok:lombok:1.18.24'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'com.zaxxer:HikariCP'
     // Spring Boot Actuator
@@ -36,11 +34,23 @@ dependencies {
 
     // Spring Boot DevTools
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-
+    testImplementation 'org.mockito:mockito-core:3.11.2'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.12.3'
+    testImplementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.3'
+    
 }
 
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:2020.0.4"
+    }
+}
+
+test {
+    useJUnitPlatform()
+    reports {
+        junitXml.enabled = true
+        html.enabled = true
     }
 }

@@ -55,6 +55,13 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/test" kind="src" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/a95c9f4bc8e3000f7b7adfdf5732b13cca5451e/lombok-1.18.24-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar">
 		<attributes>
@@ -338,12 +345,12 @@
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.4/e940eba762d32fc5510100294ae06fb97bf4966/jackson-annotations-2.12.4-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.4/752cf9a2562ac2c012e48057e3a4c17dad66c66e/jackson-annotations-2.12.4.jar">
 		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="gradle_used_by_scope" value="main"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.4/a86f7cf57b4d195c1de3a9ec5ae489f869938ed1/jackson-core-2.12.4-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.4/6a1bd259b6c4e3f9219ec8ec0be55ed11eed0c/jackson-core-2.12.4.jar">
 		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="gradle_used_by_scope" value="main"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.12.4/ca7a849956322c2044147e5cc890f0601acb81c7/jackson-datatype-jdk8-2.12.4-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.12.4/858a1e1b677cbafd3b100d5154f491a7051401c/jackson-datatype-jdk8-2.12.4.jar">
@@ -353,7 +360,7 @@
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.4/68890b0351482650dcfccf2a495e3396d0996ba7/jackson-databind-2.12.4-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.4/69206e02e6a696034f06a59d3ddbfbba5a4cd81/jackson-databind-2.12.4.jar">
 		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="gradle_used_by_scope" value="main"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.52/cf6855f3537022d5a94c4204c73446fa170e5736/tomcat-embed-websocket-9.0.52-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.52/557c15720af6f8d59a8308ce290f4408b5325194/tomcat-embed-websocket-9.0.52.jar">
@@ -457,6 +464,36 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.9.0/c16ea5cf4c8b06dc63e5bb0af9a9828cce6c5e01/mockito-junit-jupiter-3.9.0-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.9.0/871745ab6af5a269411ea3c1f99ced82ed079436/mockito-junit-jupiter-3.9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.11.2/178871b0bd3db59c69fc350cb65575bb84bb5bf4/mockito-core-3.11.2-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.11.2/bb97012477172d7c04ff2193e31fcb38dd171879/mockito-core-3.11.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.3/6880dd2c9a2d367fa77d4665415c4098cef1cc5b/jackson-annotations-2.12.3-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.3/7275513412694a1aafd08c0287f48469fa0e6e17/jackson-annotations-2.12.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.3/9309b99550ea9e01c25dfb6080785e80ba0e73e4/jackson-core-2.12.3-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.3/deb23fe2a7f2b773e18ced2b50d4acc1df8fa366/jackson-core-2.12.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.3/2484ae1dde5166bc222894ba7b5fc27fe6d3cc00/jackson-databind-2.12.3-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.3/d6153f8fc60c479ab0f9efb35c034526436a4953/jackson-databind-2.12.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.5.0/dc46e2ab488eb8d8db263405bccd1895e68a7f1a/json-path-2.5.0-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.5.0/c35ef29095125b51638d19120f63e2b56eff20e9/json-path-2.5.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
@@ -511,18 +548,6 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.9.0/c16ea5cf4c8b06dc63e5bb0af9a9828cce6c5e01/mockito-junit-jupiter-3.9.0-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.9.0/871745ab6af5a269411ea3c1f99ced82ed079436/mockito-junit-jupiter-3.9.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.9.0/3f2009c0b6ec7ed0274491dedd71bc4b9e19ab33/mockito-core-3.9.0-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.9.0/b7573430aea743b26434b44f4f46272af613e660/mockito-core-3.9.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/d729b258165a2fd9b5d6156c05c4c4f7ca053117/jsonassert-1.5.0-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
@@ -541,18 +566,6 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/d64652c79751177c96a294fd5a1dcd61a330e940/json-smart-2.4.7-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/c45b5962230be8a5f93759203870c98917bb8b31/jakarta.activation-api-1.2.2-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.22/128393bfff6352100e5e463a4b6c3b51a59c8460/byte-buddy-agent-1.10.22-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.22/b01df6b71a882b9fde5a608a26e641cd399a4d83/byte-buddy-agent-1.10.22.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
@@ -560,6 +573,18 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/9f5da90020a255f25b6d8da8db273e2d38ce9805/objenesis-3.2-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/7fadf57620c8b8abdf7519533e5527367cb51f09/objenesis-3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/d64652c79751177c96a294fd5a1dcd61a330e940/json-smart-2.4.7-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/vscode/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/c45b5962230be8a5f93759203870c98917bb8b31/jakarta.activation-api-1.2.2-sources.jar" kind="lib" path="/home/vscode/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
